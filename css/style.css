@@ -20,3 +20,15 @@ body {
   font-size: 18px;
 }
 
+.label {
+  vertical-align: top;
+  display: inline-block;
+  width: 40%;
+  text-align: right;
+}
+
+.form-box {
+  display: inline-block;
+  width: 46%;
+  text-align: left;
+}
