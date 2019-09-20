@@ -1,0 +1,21 @@
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: rgb(48, 201, 201);
+  text-align: center;
+}
+
+#title {
+  font-weight: bold;
+  font-size: 3em;
+}
+
+#content {
+  max-width: 1000px;
+  min-width: 400px;
+  background-color: rgb(255, 246, 234);
+  margin: 0 auto;
+  padding: 10px 0;
+  border-radius: 20px;
+  font-size: 18px;
+}
+
