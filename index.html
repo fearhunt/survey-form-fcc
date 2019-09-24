@@ -8,7 +8,6 @@
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet"> 
 
     <!-- Refer CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="css/style.css" rel="stylesheet">
 
     <!-- Title Bar -->
@@ -25,29 +24,29 @@
 
       <form id="survey-form" method="GET" action="https://crossorigin.me/https://freecodecamp.com">
         <div>
-          <div class="label">
-            awdads
+          <div class="label" id="name-label">
+            * Nama:
           </div>
           <div class="form-box" id="name">
-            orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsu
+            <input type="text" name="name" placeholder="Masukkan namamu" class="input-field">
           </div>
         </div>
 
         <div>
-          <div class="label">
-
+          <div class="label" id="email-label">
+            * Email:
           </div>
           <div id="email" class="form-box">
-
+            <input type="email" name="email" placeholder="Masukkan emailmu" class="input-field">
           </div>
         </div>
 
         <div>
-          <div class="label">
-
+          <div class="label" id="number-label">
+            * Umur:
           </div>
           <div id="number" class="form-box">
-
+            <input type="number" name="age" min="1" max="150" step="1" class="input-field" placeholder="Masukkan umur"> 
           </div>
         </div>
       </form>
