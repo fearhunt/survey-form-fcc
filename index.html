@@ -24,36 +24,69 @@
 
       <form id="survey-form" method="GET" action="https://crossorigin.me/https://freecodecamp.com">
         <div>
-          <div class="label" id="name-label">
-            * Nama:
+          <div class="label">
+            <label id="name-label" for="name">
+              * Nama:
+            </label>
           </div>
-          <div class="form-box" id="name">
-            <input type="text" name="name" placeholder="Masukkan namamu" class="input-field">
-          </div>
-        </div>
-
-        <div>
-          <div class="label" id="email-label">
-            * Email:
-          </div>
-          <div id="email" class="form-box">
-            <input type="email" name="email" placeholder="Masukkan emailmu" class="input-field">
+          <div class="form-box">
+            <input autofocus type="text" id="name" name="name" placeholder="Masukkan namamu" class="input-field">
           </div>
         </div>
 
         <div>
-          <div class="label" id="number-label">
-            * Umur:
+          <div class="label">
+            <label id="email-label" for="email">
+              * Email:
+            </label>
           </div>
-          <div id="number" class="form-box">
-            <input type="number" name="age" min="1" max="150" step="1" class="input-field" placeholder="Masukkan umur"> 
+          <div class="form-box">
+            <input type="email" id="email" name="email" placeholder="Masukkan emailmu" class="input-field">
+          </div>
+        </div>
+
+        <div>
+          <div class="label">
+            <label id="number-label" for="number">
+              * Umur:
+            </label>
+          </div>
+          <div class="form-box">
+            <input type="number" id="number" name="age" min="1" max="150" step="1" class="input-field" placeholder="Masukkan umur"> 
+          </div>
+        </div>
+
+        <div>
+          <div class="label">
+            <label id="select-label" for="dropdown">
+              Menurutmu, seberapa gantengkah kamu? 
+            </label>
+          </div>
+          <div class="form-box">
+            <select id="dropdown" name="optGanteng" class="select-field">
+              <option disabled value>Pilih salah satu dari di bawah</option>
+              <option value="1">Ganteng banget</option>
+              <option value="2">Standar aja si</option>
+              <option value="3">Jelek cuy</option>
+            </select> 
+          </div>
+        </div>
+
+        <div>
+          <div class="label">
+            <label id="comment" for="komentar">
+              Ada saran atau komentar untuk <i>website</i> ini?
+            </label>
+          </div>
+          <div class="form-box">
+            <textarea id="komentar" name="komentar" class="input-field" style="height: 80px; resize: none;" placeholder="Masukkan komentar kamu di sini . . ."></textarea>
           </div>
         </div>
       </form>
-      <!-- <section id="form" class="row">
-        <div class="col s6 right-align">wdwd</div>
-        <div class="col s6 left-align">awawaw</div>
-      </section> -->
+
+      <button id="submit" type="submit">Submit</button>
     </div>
   </body>
+  
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </html>
